@@ -12,10 +12,9 @@ const props = defineProps({
 });
 
 const spritePath = ref<string | null>(null);
-
 onMounted(async () => {
   try {
-    spritePath.value = (await import.meta.env.BASE_URL) + 'assets/svg/sprite.svg';
+    spritePath.value = '/assets/svg/sprite.svg';
   } catch (error) {
     console.error('Error loading SVG sprite:', error);
   }

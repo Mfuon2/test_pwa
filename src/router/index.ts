@@ -4,8 +4,10 @@ import AuthRoutes from './AuthRoutes';
 import { useAuthStore } from '@/stores/auth';
 import { useUIStore } from '@/stores/ui';
 
+const baseUrl = import.meta.env.BASE_URL
+
 export const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(baseUrl),
   routes: [
     {
       path: '/:pathMatch(.*)*',
