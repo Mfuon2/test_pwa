@@ -24,6 +24,10 @@ export default defineConfig({
         {
           "name": "UnitTrust",
           "short_name": "aamc",
+          "start_url": "/",
+          "display": "standalone",
+          "background_color": "#ffffff",
+          "lang": "en",
           "description": "aamc application",
           "icons": [
             {
@@ -34,12 +38,12 @@ export default defineConfig({
             {
               "src": "/aamc-512x512.png",
               "sizes": "512x512",
-              "type": "image/png",
+              "type": "image/png"
             },
             {
               "src": "/aamc-512x512.png",
               "sizes": "512x512",
-              "type": "image/png",
+              "type": "image/png"
             },
             {
               "src": "/windows11/SmallTile.scale-100.png",
@@ -222,10 +226,23 @@ export default defineConfig({
               "sizes": "1024x1024"
             }
           ],
-          "start_url": "/",
-          "display": "standalone",
-          "background_color": "#ffffff",
-          "theme_color": "#114cac"
+          "theme_color": "#114cac",
+          "id": "com.apollo.co.ke",
+          "orientation": "portrait",
+          "display_override": [
+            "standalone"
+          ],
+          "categories": [
+            "books",
+            "business",
+            "education",
+            "entertainment",
+            "finance",
+            "fitness",
+            "lifestyle",
+            "magazines",
+            "medical"
+          ]
         }
       ,
       workbox: {
