@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import SvgSprite from '@/components/shared/SvgSprite.vue';
-
-// assets
 import avatarGroup from '@/assets/images/welcome-banner.png';
 </script>
 
